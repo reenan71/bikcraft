@@ -1,6 +1,5 @@
 .introducao-bg{
-  background: #000000;
-  color: #ffffff;
+  background: var(--bg-1);
   box-shadow:  inset 0 -120px #ffffff;
 }
 
@@ -26,23 +25,14 @@
 
 .introducao h1{
   margin-bottom: 32px;
-  font-size: 4rem;
-  line-height: 1.125;
-  font-family: 'Poppins',sans-serif;
-  font-weight: 600;
 }
 .introducao p {
   margin-bottom: 20px;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  color: #b2b2b2;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
 }
 
 @media(max-width: 800px){
   .introducao-bg{
-    background: #111111;
+    background: var(--bg-2);
     padding-top: 40px;
     box-shadow: inset 0 -60px #ffffff;
   }
