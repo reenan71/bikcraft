@@ -8,9 +8,7 @@ flex-wrap: wrap;
 gap: 20px;
 justify-content: space-between;
 align-items: center;
-padding: 20px;
-max-width: 1200px;
-margin: 0 auto;
+padding: 20px 0;
 }
 
 .header-menu{
@@ -23,6 +21,9 @@ margin: 0 auto;
   display: inline-block;
   padding: 16px 0;
   position: relative;
+  font-size: 1.125rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 
 .header-menu a::after{
