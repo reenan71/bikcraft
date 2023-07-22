@@ -8,7 +8,8 @@ flex-wrap: wrap;
 gap: 20px;
 justify-content: space-between;
 align-items: center;
-padding: 20px 0;
+padding-top: 1.25rem;
+padding-bottom: 1.25rem;
 }
 
 .header-menu{
@@ -57,10 +58,12 @@ padding: 20px 0;
   }
 }
 @media(max-width: 600px){
+
 .header-menu{
   gap: 12px;
 }
 .header-menu a{
   padding: 8px 12px;
+  font-size: 14px;
 }
 }
