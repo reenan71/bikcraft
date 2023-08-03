@@ -9,6 +9,7 @@
 @import './utilidades/cores.css';
 @import './utilidades/tipografia.css';
 @import './utilidades/formulario.css';
+@import './utilidades/animacao.css';
 
 /*Home CSS*/
 @import './home/introducao.css';
@@ -37,4 +38,6 @@
 @import './orcamento/orcamento.css';
 
 /* Termos CSS */
-@import './termos/termos.css'
+@import './termos/termos.css';
+
+

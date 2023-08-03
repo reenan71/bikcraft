@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Termos e condições.">
   <title>Seguros | Bikcraft</title>
-   <link rel="preload" href="./css/style.css" as="style">
+   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body id="seguros">
   <header class="header-bg">
@@ -35,7 +37,7 @@
     </div>
 
       <div class="seguros container">
-        <div class="seguros-item">
+        <div class="seguros-item fadeInLeft" data-anime="200">
           <h3 class="font-1-xl cor-5">PRATA</h3>
           <span class="font-1-xl cor-0">R$ 199<span class="font-1-xs cor-6">mensal</span>
           </span>
@@ -47,7 +49,7 @@
           </ul>
           <a class="botao secundario" href="./orcamento.html?tipo=seguro&produto=prata">Assinar agora</a>
         </div>
-        <div class="seguros-item">
+        <div class="seguros-item fadeInRight" data-anime="400">
           <h3 class="font-1-xl primaria-1">OURO</h3>
           <span class="font-1-xl cor-0">R$ 299<span class="font-1-xs cor-6">mensal</span>
           </span>
@@ -109,32 +111,32 @@
       <h2 class="font-1-xxl">perguntas frequentes<span class="primaria-1">.</span></h2>
       <dl>
         <div>
-          <dt class="font-1-m-b">Qual forma de pagamento vocês aceitam?</dt>
-          <dd class="font-2-s cor-9">Aceitamos cartões de crédito com as bandeiras: Visa, MasterCard, ELO e American. Para pagamentos à vista aceitamos PIX e Boleto através do PagSeguro;</dd>
+          <dt><button class="font-1-m-b" aria-controls="pergunta1" aria-expanded="true">Qual forma de pagamento vocês aceitam?</button></dt>
+          <dd id="pergunta1" class="font-2-s cor-9 ativa">Aceitamos cartões de crédito com as bandeiras: Visa, MasterCard, ELO e American. Para pagamentos à vista aceitamos PIX e Boleto através do PagSeguro;</dd>
         </div>
         <div>
-          <dt class="font-1-m-b">Como posso entrar em contato?</dt>
-          <dd class="font-2-s cor-9">Através dos nossos números que estão na página de contato e nossas redes sociais;</dd>
+          <dt><button class="font-1-m-b" aria-controls="pergunta2" aria-expanded="false">Como posso entrar em contato?</button></dt>
+          <dd id="pergunta2" class="font-2-s cor-9">Através dos nossos números que estão na página de contato e nossas redes sociais;</dd>
         </div>
         <div>
-          <dt class="font-1-m-b">Vocês possuem algum desconto?</dt>
-          <dd class="font-2-s cor-9">Temos 10% desconto para pagamentos à vista no pix ou boleto;</dd>
+          <dt><button class="font-1-m-b" aria-controls="pergunta3" aria-expanded="false">Vocês possuem algum desconto?</button></dt>
+          <dd id="pergunta3" class="font-2-s cor-9">Temos 10% desconto para pagamentos à vista no pix ou boleto;</dd>
         </div>
         <div>
-          <dt class="font-1-m-b">Posso comprar as peças separadas?</dt>
-          <dd class="font-2-s cor-9">Temos varias lojas parceiras que vendem peças separadas e sendo cliente do Clube Bikcraft, você consegue desconto em todas 😎;</dd>
+          <dt><button class="font-1-m-b" aria-controls="pergunta4" aria-expanded="false">Posso comprar as peças separadas?</button></dt>
+          <dd id="pergunta4" class="font-2-s cor-9">Temos varias lojas parceiras que vendem peças separadas e sendo cliente do Clube Bikcraft, você consegue desconto em todas 😎;</dd>
         </div>
         <div>
-          <dt class="font-1-m-b">Qual a garantia que eu tenho?</dt>
-          <dd class="font-2-s cor-9">Após o recebimento da sua Bikcraft, você terá 90 dias de garantia para qualquer problema mecânico ou elétrico que ocorrer com sua Bikcraft;</dd>
+          <dt><button class="font-1-m-b" aria-controls="pergunta5" aria-expanded="false">Qual a garantia que eu tenho?</button></dt>
+          <dd id="pergunta5" class="font-2-s cor-9">Após o recebimento da sua Bikcraft, você terá 90 dias de garantia para qualquer problema mecânico ou elétrico que ocorrer com sua Bikcraft;</dd>
         </div>
         <div>
-          <dt class="font-1-m-b">Posso parcelar no boleto?</dt>
-          <dd class="font-2-s cor-9">Você pode adquirir sua Bikcraft em até 3X no boleto;</dd>
+          <dt></dt><button class="font-1-m-b" aria-controls="pergunta6" aria-expanded="false">Posso parcelar no boleto?</button></dt>
+          <dd id="pergunta6" class="font-2-s cor-9">Você pode adquirir sua Bikcraft em até 3X no boleto;</dd>
         </div>
         <div>
-          <dt class="font-1-m-b">Qual tamanho de quadro devo escolher?</dt>
-          <dd class="font-2-s cor-9">Temos uma tabela de tamanhos de quadro de acordo com a sua altura é so conferir qual fica de acordo com a sua 😉;</dd>
+          <dt><button class="font-1-m-b" aria-controls="pergunta7" aria-expanded="false">Qual tamanho de quadro devo escolher?</button></dt>
+          <dd id="pergunta7" class="font-2-s cor-9">Temos uma tabela de tamanhos de quadro de acordo com a sua altura é so conferir qual fica de acordo com a sua 😉;</dd>
         </div>
       </dl>
   </article>
@@ -177,6 +179,7 @@
     <p class="footer-copy font-2-m cor-6">Bickcraft© Alguns direitos reservados.</p>
   </div>
   </footer>
+  <script src="./js/plugins/simple-anime.js"></script>
 <script src="./js/script.js"></script>
 </body>
 </html>
